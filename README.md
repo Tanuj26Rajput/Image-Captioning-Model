@@ -25,22 +25,24 @@ This project implements an **Image Captioning** system using deep learning techn
    git clone https://github.com/Tanuj26Rajput/image-captioning-app.git
    cd image-captioning-app
 
-🚀 How It Works
-Caption Preprocessing:
-Add <start> and <end> tokens
-Tokenize and convert to sequences
+## 🚀 How It Works
 
-Feature Extraction:
-Use pretrained InceptionV3 CNN
-Extract 2048-D features from the penultimate layer
+1. **Caption Preprocessing:**
+   - Add `<start>` and `<end>` tokens
+   - Tokenize and convert to sequences
 
-Model Architecture:
-CNN (image features) + Embedding + LSTM (text features)
-Dense layer to predict next word
+2. **Feature Extraction:**
+   - Use pretrained **InceptionV3** CNN
+   - Extract 2048-D features from the penultimate layer
 
-Training:
-Trained using a custom data generator
-Optimized with categorical_crossentropy
+3. **Model Architecture:**
+   - CNN (image features) + Embedding + LSTM (text features)
+   - Dense layer to predict next word
 
-Prediction:
-Generates captions using beam search (default beam width = 3)
+4. **Training:**
+   - Trained using a custom data generator
+   - Optimized with `categorical_crossentropy`
+
+5. **Prediction:**
+   - Generates captions using **beam search** (default beam width = 3)
+
